@@ -9,8 +9,19 @@
 #import <Foundation/Foundation.h>
 
 @interface NSString (ReverseAndFilter)
+/**
+ Reverse receiver
+ */
 - (NSString *)reverse;
+
+/**
+ Capitalize vowels and make all consonants lowercase in receiver
+ */
 - (NSString *)capitalizeVowels;
+
+/**
+ Reverse reciever, capitalize vowes and lowercase consonants in receiver
+ */
 - (NSString *)reverseAndCapitalizeVowels;
 
 @end
