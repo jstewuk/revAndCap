@@ -21,6 +21,7 @@
 		38016C7E17D18A6800193F12 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38016C5F17D18A6700193F12 /* Foundation.framework */; };
 		38016C8617D18A6800193F12 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 38016C8417D18A6800193F12 /* InfoPlist.strings */; };
 		38016C8917D18A6800193F12 /* ReverseAndFilterStringTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 38016C8817D18A6800193F12 /* ReverseAndFilterStringTests.m */; };
+		38016C9417D18D3800193F12 /* NSString+Reverse.m in Sources */ = {isa = PBXBuildFile; fileRef = 38016C9317D18D3800193F12 /* NSString+Reverse.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,8 @@
 		38016C8517D18A6800193F12 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		38016C8717D18A6800193F12 /* ReverseAndFilterStringTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReverseAndFilterStringTests.h; sourceTree = "<group>"; };
 		38016C8817D18A6800193F12 /* ReverseAndFilterStringTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ReverseAndFilterStringTests.m; sourceTree = "<group>"; };
+		38016C9217D18D3800193F12 /* NSString+Reverse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+Reverse.h"; path = "ReverseAndFilterString/NSString+Reverse.h"; sourceTree = "<group>"; };
+		38016C9317D18D3800193F12 /* NSString+Reverse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+Reverse.m"; path = "ReverseAndFilterString/NSString+Reverse.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +85,8 @@
 		38016C5117D18A6700193F12 = {
 			isa = PBXGroup;
 			children = (
+				38016C9217D18D3800193F12 /* NSString+Reverse.h */,
+				38016C9317D18D3800193F12 /* NSString+Reverse.m */,
 				38016C6317D18A6700193F12 /* ReverseAndFilterString */,
 				38016C8117D18A6800193F12 /* ReverseAndFilterStringTests */,
 				38016C5C17D18A6700193F12 /* Frameworks */,
@@ -264,6 +269,7 @@
 			files = (
 				38016C6A17D18A6800193F12 /* main.m in Sources */,
 				38016C6E17D18A6800193F12 /* JSAppDelegate.m in Sources */,
+				38016C9417D18D3800193F12 /* NSString+Reverse.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
