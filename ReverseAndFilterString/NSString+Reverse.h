@@ -20,7 +20,7 @@
 - (NSString *)capitalizeVowels;
 
 /**
- Reverse reciever, capitalize vowes and lowercase consonants in receiver
+ Reverse, capitalize vowels and lowercase consonants in receiver
  */
 - (NSString *)reverseAndCapitalizeVowels;
 

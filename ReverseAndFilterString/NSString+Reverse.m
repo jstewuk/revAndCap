@@ -50,7 +50,9 @@
 
 - (NSString *)reverseAndCapitalizeVowels {
     NSInteger length = [self length];
-    if (length == 0) return self;
+    if (length == 0) {
+        return self;
+    }
     
     NSMutableString *revCap = [NSMutableString stringWithCapacity:length];
     for (NSInteger loc = length - 1; loc >= 0; loc--) {

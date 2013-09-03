@@ -23,9 +23,12 @@
  a => A
  "" => ""
  abCD efgHIJ => jIhgfE dcbA
+ Every Good Goy Does Fine => EnIf sEOd yOb dOOg yrEvE
  */
 
 @implementation ReverseAndFilterStringTests
+
+// Reverse TDD
 
 - (void)testStringReverserReturnsEmptyStringForAnEmptyString {
     STAssertTrue([[@"" reverse] isEqualToString:@""], @"Empty string reversed should return empty string");
@@ -47,6 +50,8 @@
     STAssertTrue([[@"bcd fgh" reverse] isEqualToString:@"hgf dcb"], @"bcd fgh reversed should be @hgf dcb");
 }
 
+// Capitalize TDD
+
 - (void)test_a_capitalizeVowels_returns_A {
     STAssertTrue([[@"a" capitalizeVowels] isEqualToString:@"A"], @"a capitalizeVowel should be A");
 }
@@ -59,6 +64,8 @@
     STAssertTrue([[@"abCD efgHIJ" capitalizeVowels] isEqualToString:@"Abcd EfghIj"], @"abCD efgHIJ capitalizeVowels should be Abcd EfghIj");
 }
 
+// Capitalize and Reverse TDD and integration
+
 - (void)test_a_reverseAndCapitalizeVowels_returns_A {
     STAssertTrue([[@"a" reverseAndCapitalizeVowels] isEqualToString:@"A"], @"a reverseAndCapitalizeVowels should be A");
 }
@@ -69,6 +76,14 @@
 
 - (void)test_abCD_efgHIJ_reverseAndCapitalizeVowels_returns_jIhgfE_dcbA {
     STAssertTrue([[@"abCD efgHIJ" reverseAndCapitalizeVowels] isEqualToString:@"jIhgfE dcbA"], @"abCD efgHIJ reverseAndCapitalizeVowels should be jIhgfE dcbA");
+}
+
+// Acceptance Test:
+
+- (void)test_EGBD_Phrase_reverseAndCapitalizeVowels_returns_right_result {
+    NSString *input = @"Every Good Boy Does Fine";
+    NSString *expectedOutput = @"EnIf sEOd yOb dOOg yrEvE";
+    STAssertTrue([[input reverseAndCapitalizeVowels] isEqualToString:expectedOutput], @"Every Good Goy Does Fine => EnIf sEOd yOb dOOg yrEvE");
 }
 
 @end
