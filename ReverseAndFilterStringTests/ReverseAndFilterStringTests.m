@@ -65,6 +65,7 @@
 
 - (void)test_emptyString_reverseAndCapitalizeVowels_returns_emptyString {
     STAssertTrue([[@"" reverseAndCapitalizeVowels] isEqualToString:@""], @" emptyString reverseAndCapitalizeVowels should be emptyString");
+}
 
 - (void)test_abCD_efgHIJ_reverseAndCapitalizeVowels_returns_jIhgfE_dcbA {
     STAssertTrue([[@"abCD efgHIJ" reverseAndCapitalizeVowels] isEqualToString:@"jIhgfE dcbA"], @"abCD efgHIJ reverseAndCapitalizeVowels should be jIhgfE dcbA");
